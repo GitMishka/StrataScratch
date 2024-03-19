@@ -1,0 +1,11 @@
+# Import your libraries
+import pandas as pd
+
+# Start writing code
+airbnb_reviews.head()
+
+merged_df = pd.merge(airbnb_reviews,airbnb_guests, right_on = 'guest_id', left_on = 'to_user')
+
+filtered_df = merged_df[merged_df['from_type'] == 'host']
+
+avg_df = filtered_df.groupby(['from_user'])['age'].mean().reset_index()
