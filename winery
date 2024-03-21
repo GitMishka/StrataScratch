@@ -1,0 +1,7 @@
+# Import your libraries
+import pandas as pd
+
+# Start writing code
+winemag_p1.head()
+
+df = winemag_p1[(winemag_p1['price'] >= 200) & (winemag_p1['country'] == 'US')][['winery']].nunique()
