@@ -1,0 +1,1 @@
+select top 1 avg(review_score),from_type from airbnb_reviews group by from_type order by 1 desc
