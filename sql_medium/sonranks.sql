@@ -1,0 +1,1 @@
+select song_name from billboard_top_100_year_end where year_rank = 1  and year between 2004 and 2024 group by song_name
