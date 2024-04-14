@@ -1,0 +1,1 @@
+select top 3 purpose, sum(miles) from my_uber_drives where category = 'business' group by purpose order by 2 desc
