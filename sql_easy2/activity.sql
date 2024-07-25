@@ -1,0 +1,1 @@
+select DATEPART(day, post_date) day, count(*) from facebook_posts GROUP BY DATEPART(day, post_date)
