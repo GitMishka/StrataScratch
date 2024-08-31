@@ -1,0 +1,1 @@
+result = crunchbase_acquisitions.groupby('quarter_year').size().to_frame('size').reset_index().sort_values('size', ascending = False)
